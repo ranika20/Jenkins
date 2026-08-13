@@ -3,6 +3,7 @@ services:
     build: . # בונה את האימג' מתוך ה-Dockerfile המקומי
     image: jenkins/jenkins:lts
     container_name: jenkins
+    user: root
     ports:
       - "8080:8080"
       - "50050:50050"
