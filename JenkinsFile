@@ -44,13 +44,10 @@ pipeline {
     }
 
     post {
-        always {
-            junit allowEmptyResults: true, testResults: '**/target/*.xml'
-        }
-        failure {
-            mail to: 'ranik20@gmail.com', subject: 'The Pipeline failed :('
-        }
-    }
+    failure {
+        echo 'The Pipeline failed :('
+      }
+    } 
 }
 
 // node {
