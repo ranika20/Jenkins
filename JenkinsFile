@@ -45,27 +45,13 @@ pipeline {
 
     post {
         always {
-            // במידה ויש קובצי XML של דוחות בדיקה, יאסוף אותם
             junit allowEmptyResults: true, testResults: '**/target/*.xml'
         }
         failure {
-            // התיקון: הוספת מרכאות סביב כתובת המייל
-            mail to: 'ranik20@gmail.com', subject: 'The Pipeline failed :('
-        }
-    }
-
-
-    post {
-        success {
-            echo "התהליך הסתיים בהצלחה! האפליקציה באוויר בפורט 🍾8001."
-        }
-
-        failure {
-            echo "התהליך נכשל. כדאי לבדוק את הלוגים של השלב שנכשל 😵😵😵."
+            mail to: 'team@example.com', subject: 'The Pipeline failed :('
         }
     }
 }
-
 
 // node {
 //     checkout scm
