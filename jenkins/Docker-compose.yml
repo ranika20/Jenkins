@@ -1,0 +1,16 @@
+services:
+  jenkins:
+    build: . # בונה את האימג' מתוך ה-Dockerfile המקומי
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    ports:
+      - "8080:8080"
+      - "50050:50050"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+volumes:
+  jenkins_home:
+
+      
