@@ -9,7 +9,9 @@ const greets = [
   "Your future starts with what you do today.",
   "Your have beautiful days.",
    "Your have beautiful days man.",
+    "Your have beautiful jakins days.",
 ];
+
 
 function randomGreets() {
   const Index = Math.floor(Math.random() * greets.length);
