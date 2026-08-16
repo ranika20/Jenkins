@@ -8,8 +8,8 @@ const greets = [
   "Make today count.",
   "Your future starts with what you do today.",
   "Your have beautiful days.",
-   "Your have beautiful days man.",
-    "Your have beautiful jakins days.",
+  "Your have beautiful days man.",
+  "Your have beautiful jakins days.",
 ];
 
 
