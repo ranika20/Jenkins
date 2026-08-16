@@ -10,7 +10,7 @@ const greets = [
   "Your have beautiful days.",
   "Your have beautiful days man.",
   "Your have beautiful jakins days.",
-  ""
+
 ];
 
 function randomGreets() {
