@@ -1,5 +1,5 @@
 const express = require("express");
-const { randomGreets } = require("./greets");
+const { randomGreets } = require("./Greets");
 
 const app = express();
 
