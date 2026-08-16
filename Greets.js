@@ -10,14 +10,12 @@ const greets = [
   "Your have beautiful days.",
   "Your have beautiful days man.",
   "Your have beautiful jakins days.",
+  "",
 ];
-
 
 function randomGreets() {
   const Index = Math.floor(Math.random() * greets.length);
   return greets[Index];
 }
 
-module.exports = { randomGreets , greets }
-
-
+module.exports = { randomGreets, greets };
